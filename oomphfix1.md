@@ -25,7 +25,7 @@
 생성된 모델은 기본적인 파일이 생성
 
 ---
-###생성된 Setup 파일
+### 생성된 Setup 파일
 
 ![create setup](http://postfiles2.naver.net/MjAxNzA3MDNfMTgg/MDAxNDk5MDY0Njk5Njk3.IC9gNLBSR_ceXFfgzl4WbiqE2DfkZ8tAeVO86BqFyYAg.Ue9szdA_PbeXygwjQO8TUteR46ioixXdpSgrBoiiDJsg.PNG.ycy122/oomph2.png?type=w2)
 
@@ -33,7 +33,7 @@
 
 
 * JRE 버전에 따른 위치를 지정 
-	*	oomph 사용자의 JRE 위치를 지정	
+* oomph 사용자의 JRE 위치를 지정	
 * Eclipse Ini : 초기의 JVM의 힙메모리 크기를 지정
 * P2 저장소 : Oomph 설정파일을 설치하려는 P2저장소의 위치를 지정 
 * Oomph 업데이트 사이트위치 식별하는데 도울 수 있다.
@@ -42,14 +42,12 @@ ith Table support) and GitHub Flavored Markdown.
 
 ---
 ###참조 페이지
-<br>
+
 <http://codeandme.blogspot.kr/p/oomph-articles.html>
-<br>
 
 <https://wiki.eclipse.org/Eclipse_Oomph_Authoring#Using_the_Setup_Editor>
-<br>
+
 
 <https://www.bsi-software.com/en/scout-blog/article/oomph-changes-the-way-you-handle-multiple-eclipse-installations.html>
-<br>
 
 <https://jaxenter.de/eclipse-oomph-bringt-schwung-ins-projekt-12977>
