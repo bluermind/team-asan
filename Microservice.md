@@ -10,6 +10,19 @@
 와 같은 기능적인 요소들을 의미한다.
 각각의 마이크로서비스는 크기만 작을 뿐, 하나의 모놀리틱 아키텍처와 유사한 구조를 가진다.
 다만, 하나의 서비스에서 처리해야 하는 기능과 규모가 작기 때문에 마이크로서비스라고 부른다.
+
+## Microservice VS Monolithic
+
+![MicroService Architecthre example](http://4.bp.blogspot.com/-i-Xp5DRyvMc/VIF98b0JvBI/AAAAAAAAAZY/VBhHnw6tZwQ/s1600/Monoliths%2Band%2BMicroservices.png)
+
+Microservice는 Monolithic 방식과 비교가 된다. Monolithic Application은 덩어리 단위로 개발된다. 일반적으로 기업 애플리케이션들은
+세 주요부분으로 구성된다. 클라이언트 측 사용자 로직(사용자의 브라우저에서 동작하는 HTML페이지, 자바스크립트), 도메인 로직 (일반적인 RDBMS),서버 측 애플리케이션 로직이다. 애플리케이션은 HTTP 요청을 수락하고, 도메인 로직으로 데이터 베이스로 부터 데이터를 갱신하거나 추출 해, 브라우저에게 전송할 HTML 뷰에 덧붙여 클라이언트에 응답을 반환한다.이런 경우에 Monolithic 방식을 갖는다. 즉, 한 덩어리 안에서 로직을 실행한다.  변경이 필요한 경우, 이런 애플리케이션은 이를 반영한 전체 애플리케이션을 새롭게 빌드해 배포해야한다.
+
+이 때문에 Monolithic Application 은 작은 부분을 변경하더라도, 전체 애플리케이션을 다시 빌드하고 배포해야 한다. 결과적으로 시간이 지나면서 모듈 구조는 훼손되고, 여러 모듈 중에서 한 모듈만 변경한는 것도 쉽지 않게 된다. 일부만 확장하려고 해도, 전체 애플리케이션을 확장해야 하므로, 많은 자원을 사용해야 한다. 
+
+이에 반해 Microservice Architecture 는 작은 서비스(service) 들의 집합으로써, Application(monolithic application)을 개발하는 방법이다. 서비스들은 각각이 프로세스고, 서비스로써 HTTP, JMX,AMQP,STOMP, REST API 같은 가벼운 통신 메커니즘을 사용한다. 서비스들은 비즈니스를 구현하고, 각각은 완전히 자동화된 방법으로 독립적으로 배포될 수 있다. 서비스들을 위해 최소한의 중앙관리를 사용한다. 서비스들은 다른 프로그래밍 언어로 개발될 수 있고, 다른 데이터 저장 기술을 사용할 수 있다.
+
+
 ## Microservice Architecture
 
 ![MicroService Architecthre example](http://www.popit.kr/wp-content/uploads/2016/08/2-600x423.png)
